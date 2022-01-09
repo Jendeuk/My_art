@@ -20,8 +20,9 @@ h1 {
   font-weight: 600;
 }
 p {
-  font-size: 18px;
+  font-size: 27px;
   font-weight: 600;
+  margin: 15px;
 }
 
 /* HEADER */
@@ -43,6 +44,7 @@ nav {
 
 nav img.logo {
   width: 95px;
+  position: fixed;
 }
 
 .nav-links > a {
@@ -58,8 +60,8 @@ nav img.logo {
 
 .text-box {
   width: 90%;
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, 50%);
   text-align: center;
@@ -81,7 +83,6 @@ nav img.logo {
   border-radius: 25px;
   padding: 12px 34px;
   font-size: 20px;
-
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -98,7 +99,7 @@ nav img.logo {
 
 /* MAIN */
 .main {
-  width: 80%;
+  width: 65%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -117,21 +118,33 @@ nav img.logo {
 .recent-col {
   flex-basis: 31%;
   border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
+  padding: 18px 12px;
 }
 
 .recentImg {
-  width: 200px;
-  height: 200px;
-  border-radius: 70px;
+  width: 100%;
+  border-radius: 45px;
 }
+.journey {
+  width: 100%;
+  background-color: white;
 }
 
 /* FOOTER */
 
 @media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  nav img.logo {
+    position: absolute;
+    margin-top: 59px;
+    width: 240px;
+    left: 16%;
+  }
+
   .text-box h1 {
+    margin-top: 85px;
     font-size: 35px;
   }
 
